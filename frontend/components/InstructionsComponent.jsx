@@ -4,7 +4,7 @@ import styles from "../styles/InstructionsComponent.module.css";
 import Router, { useRouter } from "next/router";
 import MapContainer from "./MapContainer";
 import {
-	Profile
+	Profile, FollowOnLens, Theme, Size, ShareToLens
 } from '@lens-protocol/widgets-react'
 
 export default function InstructionsComponent() {
@@ -23,6 +23,8 @@ export default function InstructionsComponent() {
 				</p>
 			</header>
 
+
+
 			<MapContainer></MapContainer>
 
 			{/* <div className={styles.buttons_container}>
@@ -38,12 +40,25 @@ export default function InstructionsComponent() {
 			</div>  */}
 			<div>
 				<br/><br/>
-				<a
-					href="https://lenster.xyz/?text=Hello%20World!&url=https://ondarox.co&via=MyCoolApp&hashtags=lens,web3"
-					target="_blank"
-				>
-					Share to Lens
-				</a>
+				<div>
+				
+				</div>
+				<ShareToLens
+  					handle="germano"
+					theme='dark'
+					url="https://ginga.app"
+					hashtags="web3,social,blockchain"
+					via="Ginga"
+					title="Share on Lens 🌿"
+					size='small'
+				/> <br></br>
+				<FollowOnLens
+  					handle='germano'
+					theme='dark'
+					size='small'
+					title='Follow Ginga'
+					
+				/>
 			</div>
 			<br/>
 			<div>
