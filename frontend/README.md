@@ -1,1 +1,1 @@
-# ginga-2
+# ginga
